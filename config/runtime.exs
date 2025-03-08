@@ -55,7 +55,7 @@ if config_env() == :prod do
 
   config :hello, HelloWeb.Endpoint,
     server: true,
-    url: [host: System.get_env("APP_NAME") <> ".gigalixirapp.com", port: 443],
+    url: [host: System.get_env("APP_NAME") <> ".gigalixirapp.com", port: 4000],
     http: [
       # Enable IPv6 and bind on all interfaces.
       # Set it to  {0, 0, 0, 0, 0, 0, 0, 1} for local network only access.
